@@ -529,7 +529,7 @@ class ExcelParser {
      */
     protected function getCalculatedValue()
     {
-        $value = $this->cell->getCalculatedValue();
+        $value = $this->cell->getOldCalculatedValue();
 
         return $this->encode($value);
     }
